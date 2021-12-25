@@ -1,0 +1,31 @@
+
+// service-item
+@use "../global" as g;
+
+.service-item {
+
+    width: 90%;
+    margin: 2rem auto;
+
+    &__thumbnail {
+        margin: 3.5rem auto 1.5rem auto;
+    }
+
+    &__thumbnail-img {
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    &__content-title {
+        text-align: center;
+        margin: 2rem auto 2rem auto;
+        font-weight: bold;
+    }
+
+    &__content-text {
+        font-size: g.$font_size_s;
+        @include g.responsive("sp") {
+            font-size: g.$font_size_s_sp
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+// section-heading
+@use "../global" as g;
+
+.section-heading {
+
+    &__container {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    &__text-main {
+        letter-spacing: 0.5rem;
+        font-size: 4.5rem;
+        @include g.responsive("sp") {
+            font-size: 4rem;
+        }
+    }
+    &__text-sub {
+        @include g.responsive("sp") {
+            font-size: g.$font_size_s;
+        }
+    }
+}

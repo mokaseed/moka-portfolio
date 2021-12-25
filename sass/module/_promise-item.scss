@@ -1,0 +1,30 @@
+
+// promise-item
+@use "../global" as g;
+
+.promise-item {
+    width: 95%;
+    margin: 0 auto;
+
+    &__content-title {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        padding: 0 5px;
+        &_marker {
+            padding: 0 5px;
+            background: linear-gradient(transparent 60%, g.$color_green_light 60%);
+        }
+        @include g.responsive("sp"){
+            text-align: center;
+        }
+    }
+
+    &__content-text{
+        font-size: g.$font_size_s;
+        margin: 0 auto;
+        @include g.responsive("sp"){
+            width: 90%;
+            font-size: g.$font_size_s_sp
+        }
+    }
+}

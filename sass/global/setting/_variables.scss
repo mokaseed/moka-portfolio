@@ -1,0 +1,33 @@
+
+// variables
+
+//カラーコード
+$color_green_light: #E6F1ED;
+$color_green_dark: #7A918A;
+$color_green: #ACD6C8;
+$color_black: #616161;
+$color_gray: #F0F1F1;
+$color_white: #FFFFFF;
+
+//フォントファミリー
+$font_family_base: "HiraKakuProN-W3","Helvetica Neue", Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo, serif;
+$font_fomily_en: 'Playfair Display', "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+
+//コンテンツ幅
+$content_width_pc: 1366px;
+$content_width_tablet: 1000px;
+$content_width_sp: 700px;
+
+//フォント
+$font_size_m: 2rem;
+$font_size_s: 1.4rem;
+$font_size_s_sp: 1.6rem;
+$base_line_height: 1.8;
+$base_letter_spacing: 0.1em;
+
+//ヘッダーの高さ
+$header_height: 9rem;
+
+//z-indexの管理
+$z_index_nav_drawer: 1001;
+$z_index_nav_header: 1000;

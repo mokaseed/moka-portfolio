@@ -1,0 +1,70 @@
+
+// base
+
+@use "../global" as g;
+
+/*
+ * HTML
+ * -------------------------------------------------------------------
+ */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: g.$font_family_base;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: g.$font_size_m;
+    line-height: g.$base_line_height;
+    letter-spacing: g.$base_letter_spacing;
+    color: g.$color_black;
+    width: 100%;
+    max-width: g.$content_width_pc;
+    margin: auto;
+    @include g.responsive("tablet"){
+        max-width: g.$content_width_tablet;
+    }
+    @include g.responsive("sp"){
+        max-width: g.$content_width_sp;
+    }
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color : inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*
+ * wrapper
+ * -------------------------------------------------------------------
+ */
+.wrapper {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    min-height: 100vh;
+    
+}
+
+/*
+ * fadein animation
+ * -------------------------------------------------------------------
+ */
+
+.fadein {
+    opacity : 0;
+    transition : all 1s;
+    transform : translate(0, 50px);
+}
+    
+.fadein.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+

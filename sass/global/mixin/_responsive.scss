@@ -1,0 +1,18 @@
+
+// responsive
+@use "../setting" as s;
+
+@mixin responsive($type: "tablet") {
+    @if $type == "tablet" {
+        @media screen and (max-width: s.$content_width_tablet) {
+            
+            @content;
+        }
+    }
+    @if $type == "sp" {
+        @media screen and (max-width: s.$content_width_sp) {
+            
+            @content; 
+        }
+    }
+}

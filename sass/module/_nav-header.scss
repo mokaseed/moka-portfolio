@@ -1,0 +1,115 @@
+
+// nav-header
+@use "../global" as g;
+
+.nav-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: g.$z_index_nav_header;
+    width: 100%;
+    background-color: rgba(g.$color_white, 0.95);
+    @include g.shadow("nav-header");
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: g.$content_width_pc;
+        @include g.container("nav-header");
+        height: g.$header_height;
+        padding: 0 0 0 15px;
+    }
+
+    &__title {
+        font-family: g.$font_fomily_en;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-main {
+            display: block;
+            font-size: 2.4rem;
+        }
+        &-sub {
+            display: block;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        @include g.responsive("tablet"){
+            display: none;
+        }
+    }
+
+    &__menu-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        padding: 0 20px;
+        line-height: g.$header_height;
+        &:hover{
+            @include g.animation(hoverMenuItem, 0.5, ease, 0, 1, forwards);
+            @include g.keyframes("hoverMenuItem"){
+                from {
+                    background-color: g.$color_white;
+                }
+                to {
+                    background-color: g.$color_green_light;
+                }
+            }
+        }
+
+        
+        &_contact {
+            background-color: lighten(g.$color_green, 8%);
+            
+            &:hover{
+                @include g.animation(hoverMenuContact, 0.5, ease, 0, 1, forwards);
+                @include g.keyframes("hoverMenuContact"){
+                    from {
+                        background-color: lighten(g.$color_green, 8%);
+                    }
+                    to {
+                        background-color: g.$color_green;
+                    }
+                }
+            }
+        }
+    }
+
+    &__toggle {
+        display: none;
+        border: none;
+        position: relative;
+        z-index: +200;
+        @include g.responsive("tablet") {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: g.$header_height;
+            height: g.$header_height;
+            background-color: g.$color_green;
+            cursor: pointer;
+        }
+        &:hover{
+            background-color: darken(g.$color_green,10%);
+        }
+    }
+
+    &__toggle-line {
+        display: block;
+        width: 40%;
+        border-bottom: 4px solid g.$color_white;
+        &:nth-child(2){
+            margin: 10% 0;
+        }
+    }
+
+}

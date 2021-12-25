@@ -1,0 +1,111 @@
+
+// works-item
+
+@use "../global" as g;
+
+.works-item {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 95%;
+    margin: 0 auto;
+
+    &__thumbnail {
+        width: 45%;
+        margin: auto 3rem;
+        @include g.responsive("tablet"){
+            width: 95%;
+        }
+    }
+
+    &__thumbnail-preview {
+        width: 500px;
+        margin: auto;
+        @include g.responsive("tablet"){
+            width: 350px;
+        }
+    }
+    
+    &__content {
+        width: 45%;
+        margin: 0 auto;
+        @include g.responsive("tablet"){
+            margin: 4rem auto  1rem auto;
+            width: 95%;
+        }
+    }
+    
+    &__content-title {
+        font-weight: bold;
+        padding-left: 0.5rem;
+        @include g.responsive("tablet"){
+            text-align: center;
+        }
+    }
+    
+    &__content-table {
+        margin: 2rem 0;
+        @include g.responsive("tablet"){
+            margin: 2rem auto;
+        }
+    }
+    
+    &__content-table-row {
+        padding-bottom: 0.5rem;
+        vertical-align: top;
+    }
+
+    &__content-table-head {
+        font-size: g.$font_size_s;
+        min-width: 85px;
+        @include g.responsive("sp"){
+            font-size: g.$font_size_m;
+        }
+    }
+
+    &__content-table-data {
+        font-size: g.$font_size_s;
+        @include g.responsive("sp"){
+            font-size: g.$font_size_m;
+        }
+    }
+
+    &__button {
+        width: 250px;
+        text-align: center;
+        :hover {
+            background-color: darken(g.$color_green_light, 10%);
+        }
+        :active {
+            position: relative;
+            top: 3px;
+            left: 3px;
+            box-shadow: none;
+        }
+        @include g.responsive("tablet"){
+            margin: 0 auto;
+        }
+        @include g.responsive("sp"){
+            width: 280px;
+        }
+    }
+    
+    &__link {
+        display: block;
+        line-height: 30px;
+        border-radius: 50px;
+        font-size: g.$font_size_s;
+        box-shadow: 3px 3px 0px 0 g.$color_green_dark;
+        background-color: g.$color_green_light;
+        @include g.responsive("sp"){
+            font-size: g.$font_size_m;
+        }
+    }
+    
+    &__link-text {
+        font-weight: bold;
+    }
+
+}

@@ -1,0 +1,26 @@
+
+// top-contact
+
+@use "../global" as g;
+
+.page-contact {
+
+    
+    &__container {
+        @include g.container("page-contact");
+    }
+    
+    &__content {
+        max-width: 700px;
+        width: 95%;
+        margin: 0 auto 3rem;
+        @include g.responsive("sp"){
+            font-size: g.$font_size_s_sp;
+        }
+    }
+
+    &__text{
+        margin-bottom: 2rem;
+    }
+
+}

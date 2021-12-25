@@ -1,0 +1,32 @@
+
+// top-promise
+
+@use "../global" as g;
+
+.promise {
+
+    padding-top: 70px;
+    margin-top: -70px;
+
+    &__container {
+        @include g.container("default");
+    }
+
+    &__list {
+        max-width: 930px;
+        margin: 0 auto;
+        padding: 1rem 3rem;
+        background-color: g.$color_green_light;
+        border-radius: 20px;
+    }
+
+    &__list-item {
+        background-color: g.$color_white;
+        border-radius: 15px;
+        margin: 2rem auto;
+        padding: 2rem 0;
+    }
+
+    
+    
+}

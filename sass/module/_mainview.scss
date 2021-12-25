@@ -1,0 +1,156 @@
+
+// mainview
+@use "../global" as g;
+
+.mainview {
+    
+    margin: 0 auto;
+    width: 100%;
+
+    &__container {
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        @include g.container("mainview");
+        background-image: url(../img/mainview-pc.png);
+        @include g.responsive("tablet"){
+            background-image: url(../img/mainview-tablet.png);
+        }
+        @include g.responsive("sp"){
+            background-image: url(../img/mainview-sp.png);
+        }
+    }
+
+    &__text-wrapper {
+        margin-top: 18rem;
+        margin-left: 12rem;
+        display: flex;
+        flex-direction: column;
+        @include g.responsive("tablet"){
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 15rem;
+        }
+        @include g.responsive("sp"){
+            margin-top: 20rem;
+        }
+    }
+
+    &__text-main {
+        font-size: 5.9rem;
+        @include g.animation(slideInLeft, 2, ease, 0, 1, forwards);
+        @include g.keyframes("slideInLeft");
+        @include g.responsive("tablet"){
+            font-size: 4.5rem;
+        }
+        @include g.responsive("sp"){
+            line-height: 5rem;
+        }
+
+        &_size_s {
+            font-size: 5rem;
+            @include g.responsive("tablet"){
+                font-size: 3.5rem;
+            }
+        }
+
+        &_br_sp {
+            display: none;
+            @include g.responsive("sp"){
+                display: block;
+            }
+        }
+    }
+
+    &__text-sub-wrapper {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        @include g.responsive("sp"){
+            flex-direction: column;
+        }
+    }
+
+    &__text-sub {
+        font-size: 3.5rem;
+        color: g.$color_white;
+        font-weight: bold;
+        background-color: g.$color_green;
+        padding: 0 3.5rem;
+        border-radius: 20px;
+        @include g.responsive("tablet"){
+            font-size: 2.8rem;
+            padding: 0.5rem 2.0rem;
+            border-radius: 10px;
+        }
+        @include g.responsive("sp"){
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        &_pc {
+            @include g.responsive("sp"){
+                display: none;
+            }
+        }
+        &_sp {
+            display: none;
+            @include g.responsive("sp"){
+                display: block;
+                margin: 1.5rem 0;
+            }
+        }
+
+        &_animation_hp {
+            opacity: 0;
+            @include g.animation(slideInUp, 2, ease, 0.8, 1, forwards);
+            @include g.keyframes("slideInUp");
+        }
+
+        &_animation_lp {
+            opacity: 0;
+            @include g.animation(slideInUp, 2, ease, 1.4, 1, forwards);
+            @include g.keyframes("slideInUp");
+        }
+    }
+
+
+    &__contact-link-wrapper {
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: 9rem;
+        @include g.responsive("sp"){
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 5rem;
+        }
+        :hover {
+            @include g.animation(hoverMainviewContact, 0.5, ease, 0, 1, forwards);
+            @include g.keyframes("hoverMainviewContact"){
+                from {
+                    background-color: g.$color_white;
+                }
+                to {
+                    background-color: g.$color_green_light;
+                }
+            }
+        }
+        :active {
+            position: relative;
+            top: 3px;
+            left: 3px;
+            box-shadow: none;
+        }
+    }
+
+    &__contact-link {
+        font-size: 3.5rem;
+        color: g.$color_green_dark;
+        font-weight: bold;
+        background-color: g.$color_white;
+        padding: 1.5rem 5rem;
+        border-radius: 50px;
+        box-shadow: 5px 5px 0px 0 g.$color_green_dark;
+    }
+
+}

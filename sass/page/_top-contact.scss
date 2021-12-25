@@ -1,0 +1,52 @@
+
+// top-contact
+
+@use "../global" as g;
+
+.contact {
+
+    padding-top: 70px;
+    margin-top: -70px;
+
+    &__container {
+        @include g.container("default");
+    }
+
+    &__content {
+        max-width: 700px;
+        width: 95%;
+        margin: 0 auto;
+        @include g.responsive("sp"){
+            font-size: g.$font_size_s_sp;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__button-wrapper {
+        text-align: center;
+        padding: 3rem 0;
+        :hover {
+            background-color: darken(g.$color_green_light, 10%);
+        }
+        :active {
+            position: relative;
+            top: 3px;
+            left: 3px;
+            box-shadow: none;
+        }
+    }
+
+    &__button {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background-color: g.$color_green_light;
+        padding: 1.5rem 5rem;
+        border-radius: 50px;
+        box-shadow: 5px 5px 0px 0 g.$color_green_dark;
+        
+    }
+}
