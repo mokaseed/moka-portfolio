@@ -129,7 +129,7 @@
                                     </tr>
                                     <tr class="works-item__content-table-row">
                                         <th class="works-item__content-table-head">制作概要：</th>
-                                        <td class="works-item__content-table-data">全1ページ<br>レスポンシブ対応<br>CMS（WordPress）</td>
+                                        <td class="works-item__content-table-data">全2ページ<br>レスポンシブ対応<br>CMS（WordPress）</td>
                                     </tr>
                                 </table>
                             </dd>
