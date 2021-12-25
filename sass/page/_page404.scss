@@ -1,0 +1,14 @@
+// page404
+@use "../global" as g;
+
+.page404 {
+    &__container {
+        @include g.container("default");
+        margin-top: g.$header_height;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+    }
+}

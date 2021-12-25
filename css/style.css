@@ -1299,4 +1299,27 @@ ul {
 .page-contact__text {
   margin-bottom: 2rem;
 }
+
+.page404__container {
+  margin: 0 auto;
+  padding: 6rem 0 6rem 0;
+  width: 90%;
+  max-width: 1366px;
+  margin-top: 9rem;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .page404__container {
+    width: 95%;
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .page404__container {
+    max-width: 700px;
+  }
+}
+.page404__text {
+  margin-bottom: 3rem;
+}
 /*# sourceMappingURL=style.css.map */

@@ -9,8 +9,6 @@
 
 <body <?php body_class(); ?>>
 
-  <?php get_template_part('includes/header'); ?>
-
   <main class="wrapper">
 
     
@@ -24,8 +22,6 @@
       
     index.phpが適用
     </main>
-
-  <?php get_template_part('includes/footer'); ?>
 
   <?php get_footer(); ?>
 </body>
