@@ -566,7 +566,7 @@ ul {
   .mainview__text-sub {
     padding-right: 3px;
     padding-left: 3px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -581,7 +581,7 @@ ul {
   .mainview__text-sub_sp {
     display: block;
     margin: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 .mainview__text-sub_animation_hp {
