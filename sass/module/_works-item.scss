@@ -63,12 +63,19 @@
         @include g.responsive("sp"){
             font-size: g.$font_size_m;
         }
+        @include g.responsive("sp-s"){
+            font-size: 1.2rem;
+            min-width: 100px;
+        }
     }
 
     &__content-table-data {
         font-size: g.$font_size_s;
         @include g.responsive("sp"){
             font-size: g.$font_size_m;
+        }
+        @include g.responsive("sp-s"){
+            font-size: 1.2rem;
         }
     }
 
@@ -90,6 +97,9 @@
         @include g.responsive("sp"){
             width: 280px;
         }
+        @include g.responsive("sp-s"){
+            width: 230px;
+        }
     }
     
     &__link {
@@ -99,9 +109,6 @@
         font-size: g.$font_size_s;
         box-shadow: 3px 3px 0px 0 g.$color_green_dark;
         background-color: g.$color_green_light;
-        @include g.responsive("sp"){
-            font-size: g.$font_size_m;
-        }
     }
     
     &__link-text {

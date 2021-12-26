@@ -299,6 +299,7 @@
                         <dt class="profile__name-wrapper">
                             <span class="profile__name-wrapper_border">
                             <span class="profile__name">オヤマ モモカ</span>
+                            <br class="profile__name_br_sp-s">
                             <span class="profile__icon"><a href="https://github.com/mokaseed" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a></span>
                             <span class="profile__icon"><a href="https://twitter.com/moka_engineer" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a></span>
                             </span>
@@ -338,13 +339,6 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/icon-sass.png" alt="SASS" class="skill__thumbnail-img">
                             </figure>
                             <p class="skill__name">SASS</p>
-                        </li>
-                    
-                        <li class="skill__list-item">
-                            <figure class="skill__thumbnail">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/icon-javascript.png" alt="javascript" class="skill__thumbnail-img">
-                            </figure>
-                            <p class="skill__name">javascript</p>
                         </li>
                     
                         <li class="skill__list-item">
@@ -397,6 +391,7 @@
                         </li>
 
                         <!-- 空のlist-item -->
+                        <li class="skill__list-item"></li>
                         <li class="skill__list-item"></li>
 
                     </ul>

@@ -15,4 +15,10 @@
             @content; 
         }
     }
+    @if $type == "sp-s" {
+        @media screen and (max-width: 360px) {
+            
+            @content; 
+        }
+    }
 }

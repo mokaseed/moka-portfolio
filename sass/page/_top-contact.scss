@@ -47,6 +47,9 @@
         padding: 1.5rem 5rem;
         border-radius: 50px;
         box-shadow: 5px 5px 0px 0 g.$color_green_dark;
-        
+        @include g.responsive("sp"){
+            font-size: 2rem;
+            padding: 1.5rem 2.5rem;
+        }
     }
 }

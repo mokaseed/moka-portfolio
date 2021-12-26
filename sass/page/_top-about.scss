@@ -25,7 +25,6 @@
 
 .profile {
     background-color: g.$color_white;
-    min-width: 350px;
     max-width: 470px;
     margin: 0 1rem 1rem 1rem;
     padding: 3rem 3rem;
@@ -43,6 +42,12 @@
 
     &__name {
         margin-right: 2rem;
+        &_br_sp-s{
+            display: none;
+            @include g.responsive("sp-s"){
+                display: block;
+            }
+        }
     }
 
     &__icon {
@@ -62,7 +67,6 @@
 
 .skill {
     background-color: g.$color_white;
-    min-width: 350px;
     max-width: 470px;
     margin: 0 1rem 1rem 1rem;
     padding: 3rem 3rem 3rem 3rem;
@@ -89,6 +93,9 @@
     &__list-item {
         width: 25%;
         margin-bottom: 1rem;
+        @include g.responsive("sp"){
+            width: 30%;
+        }
     }
     
     
@@ -100,5 +107,8 @@
     &__name {
         text-align: center;
         font-size: g.$font_size_s;
+        @include g.responsive("sp-s"){
+            font-size: 1.2rem;
+        }
     }
 }

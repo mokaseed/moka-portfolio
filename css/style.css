@@ -520,7 +520,7 @@ ul {
 }
 @media screen and (max-width: 700px) {
   .mainview__text-main_size_s {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 .mainview__text-main_br_sp {
@@ -566,7 +566,7 @@ ul {
   .mainview__text-sub {
     padding-right: 3px;
     padding-left: 3px;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -581,7 +581,7 @@ ul {
   .mainview__text-sub_sp {
     display: block;
     margin: 1.5rem 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 .mainview__text-sub_animation_hp {
@@ -811,12 +811,23 @@ ul {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .works-item__content-table-head {
+    font-size: 1.2rem;
+    min-width: 100px;
+  }
+}
 .works-item__content-table-data {
   font-size: 1.4rem;
 }
 @media screen and (max-width: 700px) {
   .works-item__content-table-data {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .works-item__content-table-data {
+    font-size: 1.2rem;
   }
 }
 .works-item__button {
@@ -843,6 +854,11 @@ ul {
     width: 280px;
   }
 }
+@media screen and (max-width: 360px) {
+  .works-item__button {
+    width: 230px;
+  }
+}
 .works-item__link {
   display: block;
   line-height: 30px;
@@ -851,11 +867,6 @@ ul {
   -webkit-box-shadow: 3px 3px 0px 0 #7A918A;
           box-shadow: 3px 3px 0px 0 #7A918A;
   background-color: #E6F1ED;
-}
-@media screen and (max-width: 700px) {
-  .works-item__link {
-    font-size: 2rem;
-  }
 }
 .works-item__link-text {
   font-weight: bold;
@@ -1078,8 +1089,6 @@ ul {
   padding: 3rem 0;
   max-width: 1100px;
   width: 95%;
-  overflow: scroll;
-  min-width: 350px;
 }
 
 .promise {
@@ -1154,7 +1163,6 @@ ul {
 
 .profile {
   background-color: #FFFFFF;
-  min-width: 350px;
   max-width: 470px;
   margin: 0 1rem 1rem 1rem;
   padding: 3rem 3rem;
@@ -1171,6 +1179,14 @@ ul {
 }
 .profile__name {
   margin-right: 2rem;
+}
+.profile__name_br_sp-s {
+  display: none;
+}
+@media screen and (max-width: 360px) {
+  .profile__name_br_sp-s {
+    display: block;
+  }
 }
 .profile__icon {
   font-size: 3rem;
@@ -1189,7 +1205,6 @@ ul {
 
 .skill {
   background-color: #FFFFFF;
-  min-width: 350px;
   max-width: 470px;
   margin: 0 1rem 1rem 1rem;
   padding: 3rem 3rem 3rem 3rem;
@@ -1220,6 +1235,11 @@ ul {
   width: 25%;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 700px) {
+  .skill__list-item {
+    width: 30%;
+  }
+}
 .skill__thumbnail-img {
   height: 30px;
   margin: 0 auto 2px auto;
@@ -1227,6 +1247,11 @@ ul {
 .skill__name {
   text-align: center;
   font-size: 1.4rem;
+}
+@media screen and (max-width: 360px) {
+  .skill__name {
+    font-size: 1.2rem;
+  }
 }
 
 .contact {
@@ -1286,6 +1311,12 @@ ul {
   border-radius: 50px;
   -webkit-box-shadow: 5px 5px 0px 0 #7A918A;
           box-shadow: 5px 5px 0px 0 #7A918A;
+}
+@media screen and (max-width: 700px) {
+  .contact__button {
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 .page-contact__container {
