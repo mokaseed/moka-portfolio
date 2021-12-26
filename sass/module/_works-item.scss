@@ -59,7 +59,7 @@
 
     &__content-table-head {
         font-size: g.$font_size_s;
-        min-width: 85px;
+        min-width: 120px;
         @include g.responsive("sp"){
             font-size: g.$font_size_m;
         }
